@@ -1,0 +1,16 @@
+/* Fondo azul para toda la página y texto blanco */
+body {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Todos los subtítulos en verde */
+h2, h3 {
+    color: #2ecc71;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #4ea8de;
+}
