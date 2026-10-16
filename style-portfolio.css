@@ -1,4 +1,3 @@
-/* Fondo azul para toda la página y texto blanco */
 body {
     background-color: #0d1b2a;
     color: #ffffff;
@@ -13,4 +12,41 @@ h2, h3 {
 /* Estilo para los enlaces */
 a {
     color: #4ea8de;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 240, 255, 0.15);
+}
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00f0ff;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
